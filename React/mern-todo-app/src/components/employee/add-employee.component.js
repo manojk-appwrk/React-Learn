@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+//import Datetime from 'react-datetime';
+// var moment = require('moment');
 
 export default class CreateEmployee extends Component {
     constructor(props) {
@@ -93,8 +95,11 @@ export default class CreateEmployee extends Component {
                     </div>
                     <div className="form-group">
                         <label>DOB: </label>
+                        {/* <Datetime inputProps={{ placeholder: 'N/A', disabled: true }} className="form-control"
+                            value={this.state.emp_dob}
+                            onChange={this.onChangeDOB}></Datetime> */}
                         <input
-                            type="text"
+                            type="date"
                             className="form-control"
                             value={this.state.emp_dob}
                             onChange={this.onChangeDOB}

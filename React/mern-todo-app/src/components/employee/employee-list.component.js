@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+// import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 const Employee = props => (
     <tr>
